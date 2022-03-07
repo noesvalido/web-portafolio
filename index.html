@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/93bb6009ab.js" crossorigin="anonymous"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -14,8 +15,9 @@
         <div class="logo">
             <img class="logo__img" src="images/logo.png" alt="">
         </div>
-        <nav>
-            <ul class="nav__lista">
+        <nav class="nav">
+            <a class="btn-open-sidebar" href="#sidebar"><i class="fa-solid fa-bars"></i></a>
+            <ul class="nav__lista" id="sidebar">
                 <li>
                     <a href="">Inicio</a>
                 </li>
@@ -31,6 +33,9 @@
                 <li>
                     <a href="">Contacto</a>
                 </li>
+                <li class="nav__item">
+                    <a class="nav__enlace btn-close-sidebar" href="#">X</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -38,12 +43,26 @@
 <!-- M A I N -->
     <main class="main">
         <div class="contenedor__imgmain">
-          <!--   <img src="images/imgprincipalmobile.jpeg" alt=""> -->
+            <div class="main__texto">
+                <h1>Marca Desconocida</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <div id="boton">
+                    <a href="pages/portafolio.html">Ver más</a>
+                </div>
+            </div>
         </div>
     </main>
 <!-- F O O T E R -->
     <footer class="footer">
-        
+        <div class="footer__texto">
+            <h2>Marca Desconocida</h2>
+        </div>
+        <div class="footer__rrss">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <p>Todos los derechos reservados. 2022</p>
     </footer>
     </div>
 </body>

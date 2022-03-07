@@ -7,7 +7,7 @@
 .layout {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh 30vh;
+    grid-template-rows: 100vh 25vh;
 }
 
 a {
@@ -25,25 +25,53 @@ ul {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(105, 67, 114, 0.452);
     width: 100%;
     height: 15vh;
-    background-color: rgba(0, 0, 0, 0.507);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    background-color: rgba(52, 0, 63, 0.411);
 }
 
 .logo {
-    width: 5rem;
+    width: 7rem;
 }
 
 .logo__img {
     width: 100%;
+    padding-left: 1rem;
 }
 
 .nav__lista {
     display: flex;
     flex-direction: column;
+    padding-right: 1rem;
+    background-color: azure;
+    height: 100vh;
+    max-width: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    transition: transform 0.5s;
+    z-index: 100;
+}
+
+.btn-open-sidebar {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.btn-open-sidebar a:hover {
+    color: bisque;
+}
+
+#sidebar:target {
+    transform: translateX(0);
 }
 
 
@@ -54,13 +82,78 @@ ul {
     height: 100vh;
     background-image: url(../images/imgprincipalmobile.jpeg);
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18rem;
 }
 
 .contenedor__imgmain img {
     width: 100%;
 }
 
+.main__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main__texto h1 {
+    margin-bottom: 0.8rem;
+}
+
+.main__texto p {
+    margin-bottom: 1.8rem;
+}
+
+#boton a {
+    border: 2px solid black;
+    margin: auto;
+    display: block;
+    padding: 0.6rem 1.8rem;
+    font-weight: bold;
+    color: black;
+    transition: .3s;
+}
+
+#boton a:hover {
+    background-color: rgba(240, 248, 255, 0.178);
+    color: bisque;
+    border: 3px solid bisque;
+}
+
 /* F O O T E R */
 .footer {
-    background-color: salmon;
+    background-color: rgba(233, 166, 166, 0.452);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
 }
+
+.footer__rrss {
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.footer__rrss i{
+    padding-left: 0.7rem;
+
+}
+
+.footer__texto {
+    text-align: center;
+}
+
+
+.footer__texto h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* M E D I A   Q U E R Y S */
+
